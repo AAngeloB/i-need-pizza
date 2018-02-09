@@ -5,43 +5,6 @@
 * Keys with more than one value should be an array of strings ex. Veggies
 */
 
-Customer Name: James Franko
-Address: 2155 E Lake Dr
-City: Seattle
-State: WA
-Zip Code: 11310
-Pizza:
-  Crust: thin
-  Pizza Sauce: robust marinara
-  Cheese: regular
-  Toppings:
-    Veggies: olives, green peppers
-    Meats: pepperoni, ham, sausage
-Side Items: breadsticks, bbq wings 6 piece
-Sauces: ranch
-Special Instructions: please cut into squares
-Payment Type: cash
-Store Id: 112
-
-
-
-Customer Name: Justin Bieber
-Address: 1801 W Rodeo Dr
-City: Beverly Hills
-State: CA
-Zip Code: 91833
-Pizza:
-  Crust: stuffed crust
-  Pizza Sauce: creamy garlic alfredo
-  Cheese: double
-  Toppings:
-    Veggies: onion, anchovies, mushrooms
-    Meats: chicken, bacon
-Side Items: double fudge brownie dessert
-Sauces: bbq, garlic sauce
-Special Instructions: call 815 at the gate
-Payment Type: credit card
-Store Id: 382
 
 /*
 * Create a new variable named currentOrders
@@ -57,15 +20,14 @@ Store Id: 382
 
 
 var currentOrders = {
-order11821 = {
+order11821: {
 	customername : "James Franko",
 	address : "2155 E Lake Dr",
 	city : "Seattle",
 	State : "WA",
 	ZipCode : 11310
-	}
-
-pizza:
+}
+pizza:{
 	Crust: "thin",
 	PizzaSauce: "robust marinara",
 	Cheese: "regular"
@@ -84,20 +46,20 @@ PaymentType: "cash",
 StoreId: 112
 }
 };
- console.log(currentOrders.customername)
 
 
-Customer Name: "Justin Bieber",
+order11372:{
+CustomerName1: "Justin Bieber",
 	Address: "1801 W Rodeo Dr",
 	City: "Beverly Hills",
 	State: "CA",
 	ZipCode: 91833
-Pizza:
+Pizza: {
   	Crust: "stuffed crust",
   	PizzaSauce: "creamy garlic alfredo",
   	Cheese: "double"
-
-Toppings:
+}
+Toppings:{
     Veggies: ["onion, anchovies, mushrooms"],
     Meats: ["chicken, bacon"],
 SideItems: "double fudge brownie dessert",
@@ -105,3 +67,16 @@ Sauces: ["bbq, garlic sauce"],
 SpecialInstructions: "call 815 at the gate",
 PaymentType: "credit card",
 StoreId: 382
+}
+};
+
+
+
+
+
+currentOrders.order11821.pizza.PizzaSauce.push("classic marinara");
+currentOrders.order11821.Toppings.Meats.pop[2];
+
+
+
+console.log(currentOrders)
